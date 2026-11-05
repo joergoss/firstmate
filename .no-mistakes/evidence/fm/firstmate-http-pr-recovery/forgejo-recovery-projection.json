@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "id": "atomic-heal-http-forgejo-retained-b12",
+      "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+      "completion": {
+        "date": "2026-11-05",
+        "verb": "merged"
+      },
+      "body_excerpt": "Deliverable of the finished work: PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+    },
+    {
+      "id": "atomic-heal-http-forgejo-b12",
+      "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+      "completion": {
+        "date": "2026-11-05",
+        "verb": "merged"
+      },
+      "body_excerpt": "PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+    }
+  ]
+}

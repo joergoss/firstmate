@@ -1,0 +1,117 @@
+===== Replayed HTTP Forgejo close (real tasks-axi output) =====
+--- tasks-axi show atomic-heal-http-forgejo-b12 --full ---
+task:
+  id: atomic-heal-http-forgejo-b12
+  title: item for atomic-heal-http-forgejo-b12
+  state: done
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: "-"
+  priority: "-"
+  created: "-"
+  closed: 2026-11-05
+  deps: none
+  links: none
+  body: "PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+
+--- tasks-axi show atomic-heal-http-forgejo-retained-b12 --full ---
+task:
+  id: atomic-heal-http-forgejo-retained-b12
+  title: item for atomic-heal-http-forgejo-retained-b12
+  state: done
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: "-"
+  priority: "-"
+  created: "-"
+  closed: 2026-11-05
+  deps: none
+  links: none
+  body: "Deliverable of the finished work: PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+
+===== Unsupported HTTP close markers preserve both records =====
+--- atomic-marker-unsupported-pr-1: tasks-axi show ---
+task:
+  id: atomic-marker-unsupported-pr-1
+  title: item for atomic-marker-unsupported-pr-1
+  state: in_flight
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: "-"
+  priority: "-"
+  created: 2026-11-05
+  closed: "-"
+  deps: none
+  links: none
+  body: ""
+
+--- preserved home/state/atomic-marker-unsupported-pr-1.backlog-close ---
+id=atomic-marker-unsupported-pr-1
+data=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-backlog-atomicity.Vx4iLC/marker-unsupported-pr-1/home/data
+spawn_gen=spawn-unsupported-pr
+arg=--pr
+arg=http://git.example.com/group/repo/-/merge_requests/7
+
+--- preserved home/state/atomic-marker-unsupported-pr-1.meta ---
+window=firstmate:fm-atomic-marker-unsupported-pr-1
+endpoint_task_id=atomic-marker-unsupported-pr-1
+worktree=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-backlog-atomicity.Vx4iLC/marker-unsupported-pr-1/absent-worktree
+project=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-backlog-atomicity.Vx4iLC/marker-unsupported-pr-1/absent-project
+harness=claude
+kind=ship
+mode=no-mistakes
+yolo=off
+spawn_gen=spawn-unsupported-pr
+
+--- atomic-marker-unsupported-pr-2: tasks-axi show ---
+task:
+  id: atomic-marker-unsupported-pr-2
+  title: item for atomic-marker-unsupported-pr-2
+  state: in_flight
+  blocked: no
+  blocked_by: none
+  held: no
+  hold_reason: "-"
+  hold_kind: "-"
+  hold_until: "-"
+  kind: ship
+  repo: "-"
+  priority: "-"
+  created: 2026-11-05
+  closed: "-"
+  deps: none
+  links: none
+  body: ""
+
+--- preserved home/state/atomic-marker-unsupported-pr-2.backlog-close ---
+id=atomic-marker-unsupported-pr-2
+data=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-backlog-atomicity.Vx4iLC/marker-unsupported-pr-2/home/data
+spawn_gen=spawn-unsupported-pr
+arg=--pr
+arg=http://pi4:99999/o/r/pulls/7
+
+--- preserved home/state/atomic-marker-unsupported-pr-2.meta ---
+window=firstmate:fm-atomic-marker-unsupported-pr-2
+endpoint_task_id=atomic-marker-unsupported-pr-2
+worktree=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-backlog-atomicity.Vx4iLC/marker-unsupported-pr-2/absent-worktree
+project=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-backlog-atomicity.Vx4iLC/marker-unsupported-pr-2/absent-project
+harness=claude
+kind=ship
+mode=no-mistakes
+yolo=off
+spawn_gen=spawn-unsupported-pr

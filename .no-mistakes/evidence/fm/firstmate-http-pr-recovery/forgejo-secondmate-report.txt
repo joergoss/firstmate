@@ -1,0 +1,13 @@
+===== Valid unrecorded HTTP Forgejo PR is preserved as structured pr= metadata =====
+--- forgejo-ledger/mate/state/child.status ---
+done: PR http://pi4:3001/o/r/pulls/7 checks green
+
+--- forgejo-ledger/main/state/mate.status ---
+done [key=child-outcome-child-done-220a4033] [at=1793858526]: child child done: PR http://pi4:3001/o/r/pulls/7 checks green pr=http://pi4:3001/o/r/pulls/7 mode=no-mistakes yolo=off
+
+===== Parser-invalid Forgejo-on-GitHub URL is omitted from structured pr= metadata =====
+--- noncanonical-ledger/mate/state/child.status ---
+done: PR https://github.com/o/r/pulls/7 checks green
+
+--- noncanonical-ledger/main/state/mate.status ---
+done [key=child-outcome-child-done-50ec076e] [at=1793858526]: child child done: PR https://github.com/o/r/pulls/7 checks green mode=no-mistakes yolo=off

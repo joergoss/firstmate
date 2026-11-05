@@ -1,0 +1,30 @@
+{
+  "landed": [
+    {
+      "id": "atomic-heal-http-forgejo-retained-b12",
+      "title": "item for atomic-heal-http-forgejo-retained-b12",
+      "kind": "ship",
+      "hold_kind": null,
+      "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+      "report_path": null,
+      "local_note": null,
+      "completion": {
+        "date": "2026-11-05",
+        "verb": "merged"
+      }
+    },
+    {
+      "id": "atomic-heal-http-forgejo-b12",
+      "title": "item for atomic-heal-http-forgejo-b12",
+      "kind": "ship",
+      "hold_kind": null,
+      "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+      "report_path": null,
+      "local_note": null,
+      "completion": {
+        "date": "2026-11-05",
+        "verb": "merged"
+      }
+    }
+  ]
+}

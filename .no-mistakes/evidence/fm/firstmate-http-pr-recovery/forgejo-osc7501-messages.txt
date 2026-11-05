@@ -1,0 +1,5 @@
+Decoded OSC 7501 messages from the live pty watcher:
+Needs your decision: ship it? 
+Done: Published http://internal/docs
+Done: Documented PR http://pi4:3001/o/r/pulls/1 in the handbook
+PR ready: PR http://pi4:3001/o/r/pulls/1 checks green

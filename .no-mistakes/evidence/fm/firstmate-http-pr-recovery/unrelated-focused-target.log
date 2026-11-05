@@ -1,0 +1,26 @@
+
+=== test_github_auto_merge_without_queue_refuses_legibly ===
+ok - fm-pr-merge explains an armed auto-merge that landed nothing on a queue-less base
+exit=0
+
+=== test_completion_refuses_an_unresolvable_data_directory ===
+ok - completion refuses before mutation when backlog data is unresolvable
+exit=0
+
+=== test_secondmate_ledger_delivery_carries_report_and_failure ===
+not ok - ledger fallback did not prefer the terminal ready line PR: failed [key=child-outcome-boom-failed-91a2b68f] [at=1793859253]: child boom failed: build broke pr=https://example.test/owner/repo/pull/1 mode=no-mistakes yolo=off
+done [key=child-outcome-replaced-pr-done-42332ea2] [at=1793859253]: child replaced-pr done: PR https://example.test/owner/repo/pull/22 mode=no-mistakes yolo=off
+done [key=child-outcome-scout-done-7df8177b] [at=1793859253]: child scout done: report written pr=https://example.test/owner/repo/pull/1 mode=no-mistakes yolo=off report=data/scout/report.md
+exit=1
+
+=== test_rebuild_is_idempotent_and_does_not_double_arm ===
+ok - rebuild refreshes the board in place without double-arming
+exit=0
+
+=== test_work_written_at_reap_boundary_is_preserved ===
+ok - teardown leaves opencode's busy plugin in the returned pool worktree as on main
+orca/reap-refusal: teardown_exit=1 replay_exit=0 metadata_after_replay=retained backlog_after_replay=in_flight
+tmux/reap-refusal: teardown_exit=1 replay_exit=0 metadata_after_replay=retained backlog_after_replay=in_flight
+not ok - tmux/untracked: did not reach the reaper: error: teardown refused: task record authorized directory cannot be resolved at /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-teardown-tests.WznHXN/post-reap-tmux-untracked/state
+not ok - 1 post-reap boundary cases failed
+exit=1

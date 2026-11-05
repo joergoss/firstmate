@@ -1,0 +1,6 @@
+=== Ready HTTP Forgejo PR ===
+t1	done		PR ready: PR http://pi4:3001/o/r/pulls/9 merged
+=== Unrelated HTTP documentation link ===
+t1	done		Done: Published http://internal/docs
+=== PR HTTP URL mentioned only in prose ===
+t1	done		Done: Documented PR http://pi4:3001/o/r/pulls/7 in the handbook

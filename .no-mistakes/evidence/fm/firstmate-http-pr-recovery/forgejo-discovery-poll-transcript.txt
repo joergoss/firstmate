@@ -1,0 +1,54 @@
+===== Automatic done-line discovery =====
+--- home/state/task-http.status ---
+done [at=2]: PR http://pi4:3001/o/r/pulls/7 checks green
+
+--- home/state/task-http.meta ---
+window=firstmate:fm-task-http
+endpoint_task_id=task-http
+worktree=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-check-security.BvaBT2/scan-records-reported-pr/wt
+project=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-check-security.BvaBT2/scan-records-reported-pr/project
+kind=ship
+mode=no-mistakes
+pr=http://pi4:3001/o/r/pulls/7
+
+--- home/state/task-http.pr-poll ---
+forgejo
+http://pi4:3001/o/r/pulls/7
+pi4:3001
+o/r
+7
+
+--- home/state/task-prose.meta ---
+window=firstmate:fm-task-prose
+endpoint_task_id=task-prose
+worktree=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-check-security.BvaBT2/scan-records-reported-pr/wt
+project=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-check-security.BvaBT2/scan-records-reported-pr/project
+kind=ship
+mode=no-mistakes
+
+===== Generated poll: open then merged =====
+--- poll-open.out ---
+<silent>
+
+--- poll-merged.out ---
+merged
+
+--- poll-tea.log ---
+login list --output json
+api --login main --repo o/r /repos/{owner}/{repo}/pulls/7
+login list --output json
+api --login main --repo o/r /repos/{owner}/{repo}/pulls/7
+
+===== Wrong-port login remains silent and calls no API =====
+--- wrong-port.out ---
+<silent>
+
+--- wrong-port-tea.log ---
+login list --output json
+
+===== Port 99999 is rejected before tea runs =====
+--- invalid-port.out ---
+<silent>
+
+--- invalid-port-tea.log ---
+<silent>
