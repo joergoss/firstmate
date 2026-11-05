@@ -1,0 +1,14 @@
+$ bin/fm-bearings-board.sh build <payload>
+{
+  "captains_call_pr": "http://pi4:3001/o/r/pulls/7",
+  "landed": [
+    {
+      "id": "http-landed",
+      "repo": "sample",
+      "what": "Landed through Forgejo",
+      "owner": "firstmate",
+      "pr_url": "http://pi4:3001/o/r/pulls/8"
+    }
+  ]
+}
+rendered HTML: http-forgejo-board.html

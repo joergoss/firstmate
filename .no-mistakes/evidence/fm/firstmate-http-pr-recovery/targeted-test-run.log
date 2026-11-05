@@ -1,0 +1,158 @@
+FM_TEST_BEGIN 2026-11-05T04:16:34Z tests/fm-pr-merge.test.sh family=pr-forge expected_gate_skip=none
+ok - fm-pr-merge reports exact queue retry flags after a zero-exit false success
+ok - fm-pr-merge omits merge-queue retry guidance for a closed GitHub PR
+ok - fm-pr-merge aggregates agreeing merge-queue rules
+ok - fm-pr-merge reports ambiguity for conflicting merge-queue rules
+ok - fm-pr-merge records pr= and pr_head= for a verified GitHub merge
+not ok - records-ahead-of-forge-call: fm-pr-merge should succeed: expected exit 0, got 1
+FM_TEST_END 2026-11-05T04:16:45Z tests/fm-pr-merge.test.sh exit=1 duration_ms=10737 gate_skip=false
+FM_TEST_BEGIN 2026-11-05T04:16:45Z tests/fm-inactive-reconcile.test.sh family=watcher-wake-lock expected_gate_skip=none
+actionable: inactive terminal outcome awaiting captain presentation: child=child state=done
+ok - main direct terminal presentation has a durable receipt
+ok - busy agent withholds the terminal outcome
+ok - idle agent on a newer incarnation withholds the terminal outcome
+actionable: inactive terminal outcome awaiting captain presentation: child=child state=done
+ok - idle finished agent keeps the terminal outcome
+actionable: inactive terminal outcome awaiting captain presentation: child=child state=done
+ok - idle finished agent with rewritten meta keeps the terminal outcome
+actionable: inactive terminal outcome awaiting captain presentation: child=child state=done
+ok - dead agent keeps the terminal outcome
+actionable: inactive terminal outcome awaiting captain presentation: child=child state=done
+wake drain: no branch-eligible row snapshot at /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-test-run.14FWuz/w2/tmp/fm-inactive-reconcile.sbs1KN/branch-ack/main/state/.branch-eligible-rows; refusing to guess what this actor may consume
+not ok - branch presentation did not require durable acknowledgement
+FM_TEST_END 2026-11-05T04:16:51Z tests/fm-inactive-reconcile.test.sh exit=1 duration_ms=6276 gate_skip=false
+FM_TEST_BEGIN 2026-11-05T04:16:51Z tests/fm-bearings-board.test.sh family=pure-contract-unit expected_gate_skip=none
+ok - path prints the stable home-scoped board location
+ok - build refuses malformed payloads before touching the board
+ok - charted kind is optional and accepts queued and warning
+error: cannot publish the registration
+fm-bearings-board: cannot arm the board as a process-event source
+not ok - a valid payload did not build
+FM_TEST_END 2026-11-05T04:16:56Z tests/fm-bearings-board.test.sh exit=1 duration_ms=5221 gate_skip=false
+FM_TEST_BEGIN 2026-11-05T04:16:56Z tests/fm-pr-check-security.test.sh family=pr-forge expected_gate_skip=none
+FM_TEST_BEGIN 2026-11-05T04:16:56Z tests/fm-teardown.test.sh family=pr-forge expected_gate_skip=none
+ok - teardown leaves opencode's busy plugin in the returned pool worktree as on main
+ok - hidden untracked work is refused before return while a clean control returns
+ok - content fallback distinguishes unavailable Git proof, containment, conflicts, and unlanded content
+orca/reap-refusal: teardown_exit=1 replay_exit=0 metadata_after_replay=retained backlog_after_replay=in_flight
+not ok - orca/clean: did not reach the reaper: error: task task-x1 cannot be torn down because whether its backlog item is still held for the captain could not be read; fix that read and retry rather than risk closing a captain call with no recorded answer
+fm-captain-hold: backlog file authorized directory cannot be resolved at /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-test-run.14FWuz/w5/tmp/fm-teardown-tests.QTwNyR/post-reap-orca-clean/data
+tmux/reap-refusal: teardown_exit=1 replay_exit=0 metadata_after_replay=retained backlog_after_replay=in_flight
+not ok - tmux/scout: did not reach the reaper: error: task task-x1 cannot be torn down because whether its backlog item is still held for the captain could not be read; fix that read and retry rather than risk closing a captain call with no recorded answer
+fm-captain-hold: backlog file authorized directory cannot be resolved at /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-test-run.14FWuz/w5/tmp/fm-teardown-tests.QTwNyR/post-reap-tmux-scout/data
+not ok - 2 post-reap boundary cases failed
+FM_TEST_END 2026-11-05T04:18:16Z tests/fm-teardown.test.sh exit=1 duration_ms=79907 gate_skip=false
+ok - raw-byte parser accepts canonical URLs and rejects the complete adversarial matrix
+ok - GitHub Enterprise config resolves override, home, then the library code root
+ok - GitHub Enterprise hosts are accepted only when the home names them and their host reaches every forge call
+ok - GitLab merge requests are followed on any instance and never wake falsely
+ok - Forgejo poll reads one pull request by number through tea api and wakes only on merged true
+ok - plain-http Forgejo poll resolves only the exact host-and-port login
+ok - Forgejo login match parses tea's JSON in every line shape, in the helper and the static poll
+ok - the Gerrit watch wakes only on an explicit merged status and never on submittability
+ok - Gerrit arming records no patch set revision and the merge path refuses to submit
+ok - Gerrit arming accepts a published HEAD only by the change's current patch set tree
+ok - a no-mistakes Gerrit ready report requires the pipeline's fixes recovered into the published copy
+ok - validated merged polls notify once and retire before the next watcher cycle
+ok - a repeat identical merged poll for an already-notified task is absorbed, never queued as a main-blocking row
+ok - a failed upward merge report keeps its poll armed for repair and retry
+ok - staged self-merge and poll interleavings are never silent
+ok - queued merges retain their away authority after captain return
+ok - poll distinguishes attended authorization from external landing
+ok - accepted merge authority refuses rebound task metadata
+ok - accepted merge authority persists under the lifecycle lock
+ok - teardown cannot race merged-poll authority consumption
+ok - poll retirement preserves a replacement authority record
+ok - a merge detected by the poll is reported upward from a secondmate home exactly once
+ok - a different merged PR for the same task gets its own first notification
+ok - a merged poll on a persistent secondmate retires silently: no outcome, marker, or wake, and every lifecycle artifact preserved
+ok - queue, receipt, and every fixed-path removal crash point recover without loss or repeated execution
+ok - open/red, closed-unmerged, malformed, and forge errors remain armed until an exact merged transition
+ok - replacement, nonterminal, tampered, and custom results receive no deletion authority
+ok - queue failure and untrusted receipts preserve canonical poll evidence
+ok - GitHub and GitLab exact merged results share one retirement path
+ok - PR and teardown entrypoints reject invalid arguments before every side effect
+ok - arming refuses a draft pull request, naming it, and arms a ready or unreadable one
+ok - fm-pr-check refuses to record a PR or arm a merge watch on a secondmate record
+ok - fm-pr-check refuses to register a PR whose named head is only in the worker copy
+ok - fm-pr-check refuses a direct-PR registration while a later commit is only in the copy
+ok - the scan records the PR a done line reports and leaves prose, scouts and recorded PRs alone
+ok - the scan reports a refused registration once and records the PR on a later retry
+ok - the scan retries a refused task within two sweeps despite a hanging registration
+ok - the scan starts a later sweep at a different task so a hanging registration cannot starve it
+ok - the scan publishes the poll of a task whose pr= has none
+ok - the scan keeps a PR the supervisor recorded during its registration
+ok - the scan leaves a merged task's retired poll alone
+ok - the scan arms a replacement PR despite an older PR's merge marker
+ok - the watcher sweep scans only with config/pr-register-scan present, then records a reported PR and queues a refusal
+ok - valid direct and merge flows record exact metadata and reject multiline head metadata
+ok - rejected metacharacter bytes remain inert at generation and watcher time
+ok - static poll is silent except for one merged line and remains watcher-bounded
+ok - interrupted atomic preparation cleans private temporaries and publishes nothing
+ok - concurrent watchers observe only complete private poll publications
+ok - poll publication paths refuse symlinks and directories
+ok - live poll and custom-check artifacts require private single-link files
+ok - registered generations survive template updates and relaunch metadata without executing sidecar code or trusting forged bytes
+ok - a poll armed before a volume renumber is re-recorded under the control lock and keeps detecting merges
+ok - a renumbered registration is never re-recorded around a tampered artifact: swapped-check altered-check swapped-sidecar altered-sidecar altered-template-hash wrong-mode hardlinked-check split-device (foreign-device not exercisable on Darwin), or a pending retirement
+ok - direct re-arm publication waits without replacing an armed poll
+ok - device re-record publication waits without rewriting its registration
+ok - post-rename poll validation faults revoke both names and allow a clean retry
+ok - bootstrap does not rewrite unauthenticated checks or emit retired migration diagnostics
+ok - watcher signals promptly stop custom checks and clean private state
+ok - returned custom check descendants are drained on installed and fallback timeout paths
+ok - a timed-out custom check surfaces its timeout and earlier output on installed and fallback timeout paths
+ok - teardown removes safe poll artifacts and refuses directory-shaped check files without traversal
+FM_TEST_END 2026-11-05T04:24:22Z tests/fm-pr-check-security.test.sh exit=0 duration_ms=446066 gate_skip=false
+FM_TEST_BEGIN 2026-11-05T04:24:22Z tests/fm-backlog-atomicity.test.sh family=session-bootstrap expected_gate_skip=none
+ok - backend resolution preserves unreadable configuration errors for every caller
+ok - backend resolution preserves environment, project, user, and default precedence
+ok - backlog readers and mutations refuse unresolved backends without touching either backlog
+ok - captain hold refuses backend errors and preserves relocated addressing for valid configuration
+not ok - spawn failed: warning: /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-test-run.14FWuz/w6/tmp/fm-backlog-atomicity.G4GQbI/dispatch-ok/home/data/atomic-dispatch-b1/launch-brief.md records no ship branch; defaulting to legacy branch fm/atomic-dispatch-b1
+error: task atomic-dispatch-b1 cannot be dispatched because its backlog data directory is inaccessible: /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-test-run.14FWuz/w6/tmp/fm-backlog-atomicity.G4GQbI/dispatch-ok/home/data (tasks-axi config authorized directory cannot be resolved at /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-test-run.14FWuz/w6/tmp/fm-backlog-atomicity.G4GQbI/dispatch-ok/home)
+FM_TEST_END 2026-11-05T04:24:28Z tests/fm-backlog-atomicity.test.sh exit=1 duration_ms=6087 gate_skip=false
+FM_TEST_BEGIN 2026-11-05T04:24:28Z tests/fm-backend-rex.test.sh family=rex expected_gate_skip=optional-binary
+ok - fm_backend_rex_bin: REX_BIN_DIR, then PATH, then the server bundle path
+ok - Rex spawn refuses an endpoint whose server locality is unproven before creating sessions or tabs
+ok - fm_backend_rex_version_check: accepts API revision 5 and refuses an older CLI, older server, or missing CLI
+ok - fm_backend_rex_parse_target: <session-uuid>:<block-uuid> only, prefixes restored
+ok - fm_backend_rex_create_task: one per-home session created once then adopted, one tab per task, scoped block label, 200x50
+warning: could not move the respawned Rex secondmate tab window:00000009-0000-7000-8000-000000000009 to the first position
+ok - fm_backend_rex_create_task: confirmed launcher session gets the tab focus-safe; unconfirmed claims refuse; nested tmux and other-home use the per-home session
+ok - fm_backend_rex_create_task: refuses an unreadable inventory, ambiguous per-home sessions, and duplicates; a gone session returns 2
+ok - fm_backend_rex_create_task_in_session: closes a bare-shell husk carrying the task label, refuses over a live one
+ok - fm_backend_rex_create_task reclaim: the fallback placement closes a bare-shell husk, refuses a live one, and spawn still refuses duplicates
+ok - rex capture: CR stripped and tailed; viewport derived from the last size.rows styled rows, implicit empty bottom row restored
+ok - fm_backend_composer_state rex: the composer holding the cursor decides; a cursor outside any composer falls back to the cursorless read
+ok - fm_backend_agent_state rex: alive/dead/ambiguous from the process view, missing on not-found, unreadable without starting a server
+ok - fm_backend_agent_state rex: a harness below a shell foreground is alive and its records are trusted; a bare shell stays dead
+ok - fm_backend_busy_state rex: OSC 7501 records count only while their owner is the foreground process or an ancestor
+ok - fm_backend_rex_current_path: the foreground process cwd
+ok - rex input: literal text after --, no call for empty input, verified key names only, line submit
+ok - fm_backend_kill rex: closes exactly its tab, treats a gone block as done, retires the emptied per-home session
+ok - fm_backend_kill rex: never kills a session this home does not own, even when it is empty
+ok - fm_backend_kill rex: refuses success unless the block is proven gone
+ok - fm-teardown rex: retiring a secondmate closes its crew and its own tab and retires its per-home session
+ok - fm_backend_rex_endpoint_absence_recheck: proof only from the recorded server; missing/dead/unproven
+ok - fm_control_endpoint_absence_verdict rex: gone only on a not-found from the recorded server
+ok - fm-control exit on rex: a stopped server goes through the recorded-server absence proof, and refuses when it cannot prove absence
+ok - fm_backend_rex_list_live: home-scoped blocks only, nothing when unreachable
+ok - fm_backend_events_capable rex: API revision 5 on both ends, read without starting a server
+ok - fm_backend_wait_transition rex: a trusted blocked edge returns its record with Rex's app, kind, and message
+ok - fm_backend_wait_transition rex: a blocked edge counts only while its owner is the foreground process or an ancestor
+ok - fm_backend_wait_transition rex: level reconcile returns a blocked block once; working and cleanup clear the marker
+ok - fm_backend_wait_transition rex: a watched block's exit or close ends the wait at once for an immediate poll
+ok - fm_backend_wait_transition rex: a reader that cannot start or ends early falls back to polling
+ok - rex: a mark, progress record, tint, and wedge alert are each one small terminal write of Firstmate's own app=firstmate record
+ok - rex: mark_read reports only Firstmate's record and fails on an unreadable pane
+ok - rex: Firstmate's own program-status records never count as the worker's busy state or blocked edge
+ok - rex: attention marks are off unless config/rex-status-marks turns them on
+ok - rex: the marks producer plans from status, writes once, repairs without re-notifying, clears on resolve, and honors off
+ok - rex: clearing a task removes its mark, tint, and caches
+ok - rex: validation progress reads captured no-mistakes status by column name
+FM_TEST_END 2026-11-05T04:24:58Z tests/fm-backend-rex.test.sh exit=0 duration_ms=29513 gate_skip=false
+FM_TEST_BEGIN 2026-11-05T04:24:58Z tests/fm-osc7501.test.sh family=unclassified expected_gate_skip=none
+1..33
+ok - unknown terminal: no output or watcher, queued worker input untouched
+ok - passive detection: Ghostty arms watcher emitting working

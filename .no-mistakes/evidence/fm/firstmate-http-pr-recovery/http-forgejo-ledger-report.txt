@@ -1,0 +1,3 @@
+$ bin/fm-inactive-reconcile.sh <secondmate> (child meta has no pr=)
+parent report:
+done [key=child-outcome-child-done-34fff281]: child child done: PR http://pi4:3001/o/r/pulls/7 checks green pr=http://pi4:3001/o/r/pulls/7 mode=no-mistakes yolo=off

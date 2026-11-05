@@ -1,0 +1,13 @@
+$ bin/fm-pr-check.sh scan
+recorded: pr=http://pi4:3001/o/r/pulls/7
+poll sidecar (provider, URL, authority, repository, number):
+forgejo
+http://pi4:3001/o/r/pulls/7
+pi4:3001
+o/r
+7
+prose-only HTTP task pr records: 0
+open PR poll output: <silent>
+merged PR poll output: merged
+wrong-port-only login poll output: <silent>
+authenticated API request: api --login main --repo o/r /repos/{owner}/{repo}/pulls/7

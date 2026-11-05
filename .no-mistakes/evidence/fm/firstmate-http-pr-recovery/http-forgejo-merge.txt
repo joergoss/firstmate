@@ -1,0 +1,10 @@
+$ bin/fm-pr-merge.sh task-x1 http://pi4:3001/fixture/fixture-repo/pulls/12
+exit: 0
+verified: http://pi4:3001/fixture/fixture-repo/pulls/12 is open and mergeable, with a successful combined status at head cccccccccccccccccccccccccccccccccccccccc
+recorded: pr=http://pi4:3001/fixture/fixture-repo/pulls/12
+merge request: api --login fm-fixture --repo fixture/fixture-repo -X POST /repos/{owner}/{repo}/pulls/12/merge -f Do=merge -f head_commit_id=cccccccccccccccccccccccccccccccccccccccc
+
+wrong-port-only login:
+exit: 1
+error: merging a Forgejo pull request at pi4:3001 requires exactly one 'tea login' registered for that host (see 'tea login list')
+merge endpoint called: no

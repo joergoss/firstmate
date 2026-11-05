@@ -1,0 +1,53 @@
+$ tasks-axi show <closed-http-task> --full
+  id: evidence-http-forgejo-close
+  state: done
+  links: none
+  body: "PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+
+$ tasks-axi show <retained-http-task> --full
+  id: evidence-http-forgejo-retained
+  state: done
+  links: none
+  body: "Deliverable of the finished work: PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+
+$ bin/fm-fleet-snapshot.sh --json (selected backlog records)
+[
+  {
+    "id": "evidence-http-forgejo-retained",
+    "state": "done",
+    "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+    "completion": {
+      "verb": "merged",
+      "date": "2026-11-05"
+    },
+    "body_lines": [
+      "Deliverable of the finished work: PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+    ]
+  },
+  {
+    "id": "evidence-http-forgejo-close",
+    "state": "done",
+    "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+    "completion": {
+      "verb": "merged",
+      "date": "2026-11-05"
+    },
+    "body_lines": [
+      "PR http://pi4:3001/joergoss/Scan2Excel/pulls/7"
+    ]
+  }
+]
+
+$ bin/fm-fleet-snapshot.sh --secondmate-home-summary (selected landed rows)
+[
+  {
+    "id": "evidence-http-forgejo-retained",
+    "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+    "what": null
+  },
+  {
+    "id": "evidence-http-forgejo-close",
+    "pr_url": "http://pi4:3001/joergoss/Scan2Excel/pulls/7",
+    "what": null
+  }
+]

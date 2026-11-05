@@ -1,0 +1,34 @@
+
+[pr-check]
+ok - raw-byte parser accepts canonical URLs and rejects the complete adversarial matrix
+ok - plain-http Forgejo poll resolves only the exact host-and-port login
+ok - Forgejo login match parses tea's JSON in every line shape, in the helper and the static poll
+ok - the scan records the PR a done line reports and leaves prose, scouts and recorded PRs alone
+
+[pr-merge]
+ok - fm-pr-merge merges a Forgejo pull request through tea api instead of refusing it
+ok - fm-pr-merge resolves the exact host-and-port login and refuses another port's login
+ok - fm-pr-merge refuses when zero or more than one tea login matches the pull request's host
+
+[rex]
+ok - rex: the marks producer plans from status, writes once, repairs without re-notifying, clears on resolve, and honors off
+
+[osc]
+ok - status transitions: blocked->done, final record survives parent death
+
+[inactive]
+ok - secondmate preserves an unrecorded plain-http Forgejo PR from its ledger line
+
+[fleet]
+ok - snapshot projects plain-http Forgejo PRs from status and backlog records
+
+[backlog]
+ok - session start replays a recorded plain-http Forgejo close with its URL as a note
+ok - session start replays a recorded https Forgejo close with its --pr link
+ok - recovery rejects malformed PR URL values
+
+[board]
+ok - build accepts plain-http Forgejo PR URLs on cards and landed rows
+
+[teardown]
+ok - a ledger row carrying a plain-http PR URL still proves the anchored continuation

@@ -1,0 +1,2 @@
+base 4bd1e3aa: rejected http://pi4:3001/joergoss/Scan2Excel/pulls/7
+target 4e09760b: provider=forgejo authority=pi4:3001 repository=joergoss/Scan2Excel number=7

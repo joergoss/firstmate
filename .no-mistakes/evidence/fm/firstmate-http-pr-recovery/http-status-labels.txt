@@ -1,0 +1,9 @@
+$ bin/fm-rex-marks.sh plan t1
+ready report:
+t1	done		PR ready: PR http://pi4:3001/o/r/pulls/9 merged
+
+unrelated HTTP link:
+t1	done		Done: Published http://internal/docs
+
+HTTP PR mentioned in prose:
+t1	done		Done: Documented PR http://pi4:3001/o/r/pulls/7 in the handbook

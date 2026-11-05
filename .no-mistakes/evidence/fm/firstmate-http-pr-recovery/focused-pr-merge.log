@@ -1,0 +1,3 @@
+ok - fm-pr-merge merges a Forgejo pull request through tea api instead of refusing it
+ok - fm-pr-merge resolves the exact host-and-port login and refuses another port's login
+ok - fm-pr-merge refuses when zero or more than one tea login matches the pull request's host

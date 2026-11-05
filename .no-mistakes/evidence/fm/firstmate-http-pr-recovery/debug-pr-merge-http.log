@@ -1,0 +1,19 @@
+drwxr-xr-x@ 25 joergoss  staff  800 Nov  5 05:25 /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-merge-tests.D6Dh4A/forgejo-login-from-host
+drwxr-xr-x@  5 joergoss  staff  160 Nov  5 05:25 /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-merge-tests.D6Dh4A/forgejo-login-from-host/home
+-rw-r--r--@  1 joergoss  staff  106 Nov  5 05:25 /private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-merge-tests.D6Dh4A/forgejo-login-from-host/home/.tasks.toml
+/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-merge-tests.D6Dh4A/forgejo-login-from-host/home
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  watcher supervision needs Stop-owned automatic recovery; inspect the hook registration and startup status before ending the turn.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+verified: http://git.self-hosted.example:3000/fixture/fixture-repo/pulls/12 is open and mergeable, with a successful combined status at head cccccccccccccccccccccccccccccccccccccccc
+window=fm-task-x1
+worktree=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-merge-tests.D6Dh4A/forgejo-login-from-host/wt
+project=/private/var/folders/1d/5hhdchyx13v6gd2z7bsln_qm0000gn/T/fm-pr-merge-tests.D6Dh4A/forgejo-login-from-host/project
+kind=ship
+mode=no-mistakes
+pr=http://git.self-hosted.example:3000/fixture/fixture-repo/pulls/12
+ok - fm-pr-merge resolves the exact host-and-port login and refuses another port's login

@@ -1,0 +1,4 @@
+$ bin/fm-teardown.sh task-x1 (newest running ledger row carries an HTTP Forgejo PR)
+exit: 0
+validation command invoked: abort --run 01RUN
+task result: teardown: no-mistakes run for task-x1 is parked at a gate; aborting before the worker is removed
